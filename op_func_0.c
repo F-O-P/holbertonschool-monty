@@ -32,17 +32,14 @@ void _push(stack_t **stack, unsigned int line_number)
  * Return: Always 0
  */
 
-void _pall(stact_t **stack, unsigned int line_number)
+void _pall(stack_t **stack, unsigned int line_number)
 {
-	//add variables used here//
+	stack_t *tmp = *stack;
 
-
-	//if the stack is empty, don't print anything//
-
-	if (*stack == NULL)
-		return;
-
-	//print all values on the stack, starting from the top//
-
-		
+	(void) line_number;
+	while (stack && tmp)
+	{
+		printf("%d\n", tmp->n);
+		tmp = tmp->next;
+	}
 }
