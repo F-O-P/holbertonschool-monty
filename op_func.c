@@ -45,7 +45,7 @@ void _pall(stack_t **stack, unsigned int line_number)
 }
 
 /**
- * pint - prints the value at the top of the stack, followed by a new line
+ * _pint - prints the value at the top of the stack, followed by a new line
  * @stack: pointer to pointer to the stack
  * @line_number: current line number
  * Return: Always 0
