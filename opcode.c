@@ -13,6 +13,7 @@ int get_opcode(char *opcode)
 		{"push", _push},
 		{"pall", _pall},
 		{"pint", _pint},
+		{"pop", _pop},
 		{NULL, NULL}
 	};
 
