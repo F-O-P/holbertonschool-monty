@@ -11,7 +11,9 @@ int get_opcode(char *opcode)
 	int i;
 	instruction_t ops[] = {
 		{"push", _push},
-		{"pall", _pall}
+		{"pall", _pall},
+		{"pint", _pint},
+		{NULL, NULL}
 	};
 
 	for (i = 0; ops[i].opcode && opcode; i++)

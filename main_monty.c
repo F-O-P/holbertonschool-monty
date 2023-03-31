@@ -47,17 +47,3 @@ int main(int ac, char **av)
 	exit_op();
 	return (0);
 }
-
-/**
- * set_global - defines global varialbes
- * Return: Always 0
- */
-
-void set_global(void)
-{
-	globm.mode = 0;
-	globm.gbuff = NULL;
-	globm.n = NULL;
-	globm.head = NULL;
-	globm.line_number = 0;
-}

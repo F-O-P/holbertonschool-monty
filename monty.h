@@ -72,6 +72,8 @@ extern global_m globm;
 
 void _push(stack_t **stack, unsigned int line_number);
 void _pall(stack_t **stack, unsigned int line_number);
+void _pint(stack_t **stack, unsigned int line_number);
+void _pop(stack_t **stack, unsigned int line_number);
 
 /** helper functions **/
 
@@ -81,5 +83,7 @@ stack_t *add_dnodeint_end(stack_t **head, const int n);
 void exit_op(void);
 void free_stack_t(stack_t *head);
 int get_opcode(char *opcode);
+int delete_node_index(stack_t **head, unsigned int index);
+unsigned int len_node(stack_t **node);
 
 #endif
