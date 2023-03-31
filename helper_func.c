@@ -10,12 +10,12 @@ int _isdigit(char *c)
 {
 	if (!c)
 		return (0);
-	if(*c == '-')
+	if (*c == '-')
 		c++;
-	for(; *c; c++)
+	for (; *c; c++)
 		if (!isdigit(*c))
 			return (0);
-	return(1);
+	return (1);
 }
 
 /**
@@ -102,7 +102,7 @@ void exit_op(void)
 }
 
 /**
- * free_stack_t - 
+ * free_stack_t - free the memory on stack
  * @head: pointer to head
  * Return: Always 0
  */
