@@ -1,8 +1,8 @@
 #ifndef "MONTY_H"
 #define "MONTY_H"
 
-#include <>
-#include <>
+#include <stdio.h>
+#include <string.h>
 #include <>
 
 /**
@@ -35,6 +35,9 @@ typedef struct instruction_s
         void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
 
+void _push(stack_t **stack, unsigned int line_number);
+void _pall(stack_t **stack, unsigned int line_number);
+int _isdigit(int c);
 
 
 #endif
